@@ -10,13 +10,13 @@ Why?
 
 Managing static files is a PAIN, You must download them, unpack them copy them,
 keep them up to date ...
-Wouldn't it be cool if you cool just `pip install` them?
+Wouldn't it be cool if you cool just ``pip install`` them?
 
 What does it do?
 ================
 
 django-xstatic_ makes the static files from xstatic packages installed in
-`INSTALLED_APPS` be collected by `./manage.py collectstatic`.
+``INSTALLED_APPS`` be collected by ``./manage.py collectstatic``.
 
 
 What it should (maybe) do, but doesn't yet
