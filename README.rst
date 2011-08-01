@@ -34,8 +34,13 @@ xstatic packages comes with a metadata value named LOCATIONS_, giving URLs of
 CDN serving these same static files, django-xstatic should give a template tag
 to use them easily.
 
+Bonus Feature
+=============
+
+It works with django-compressor_!
 
 .. _XStatic: https://bitbucket.org/thomaswaldmann/xstatic
 .. _StaticFiles: https://docs.djangoproject.com/en/dev/howto/static-files/
 .. _django-xstatic: http://github.com/gautier/django-xstatic
 .. _LOCATIONS: http://readthedocs.org/docs/xstatic/en/latest/packaging.html#cdn-locations
+.. _django-compressor: http://django_compressor.readthedocs.org/
