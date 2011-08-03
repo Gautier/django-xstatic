@@ -18,6 +18,20 @@ What does it do?
 django-xstatic_ makes the static files from xstatic packages installed in
 ``INSTALLED_APPS`` be collected by ``./manage.py collectstatic``.
 
+Installation and usage
+======================
+
+    1. Install django-xstatic
+    2. Add ``'django_xstatic.finders.XStaticFinder'`` to your ``STATICFILES_FINDERS``
+    2. Install your xstatic packages and add them to ``INSTALLED_APPS``
+    3. run ``./manage.py collectstatic``
+
+Open questions
+==============
+
+django-xstatic detects xstatic package when they are in the ``INSTALLED_APPS``
+list. Should it uses its own settings key?
+
 
 What it should (maybe) do, but doesn't yet
 ==========================================
