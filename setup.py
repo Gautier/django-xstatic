@@ -1,12 +1,10 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
-long_description = open('README.rst').read()
 
 setup(
     name='django-xstatic',
     version='0.0.1',
-    description='Django helpers to use xstatic packages in django projects',
-    long_description="",
+    description='Django helpers to use XStatic packages in Django projects',
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Development Status :: 3 - Alpha',
@@ -18,13 +16,11 @@ setup(
         'Topic :: System :: Installation/Setup',
         'Topic :: System :: Software Distribution',
         ],
-    keywords="",
     author='Gautier Hayoun',
     author_email='ghayoun@gmail.com',
     url='http://github.com/gautier/django-xstatic',
     license='MIT license',
-    packages=find_packages(),
+    packages=['django_xstatic'],
     install_requires=[''], # yeah, not even XStatic, isn't that MAGIC?
                            # No, it's just smart convention
 )
-
