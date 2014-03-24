@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='django-xstatic',
-    version='0.0.1',
+    version='0.0.2',
     description='Django helpers to use XStatic packages in Django projects',
     classifiers=[
         'License :: OSI Approved :: MIT License',
