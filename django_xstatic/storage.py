@@ -1,7 +1,6 @@
 from django.core.exceptions import ImproperlyConfigured
 from django.core.files.storage import FileSystemStorage
-from django.utils.importlib import import_module
-
+from importlib import import_module
 
 class XStaticStorage(FileSystemStorage):
     """
@@ -17,7 +16,7 @@ class XStaticStorage(FileSystemStorage):
         module, attr = package.rsplit('.', 1)
         try:
             mod = import_module(module)
-        except ImportError, e:
+        except ImportError as e:
             raise ImproperlyConfigured('Error importing module %s: "%s"' %
                                        (module, e))
         try:
